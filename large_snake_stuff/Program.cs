@@ -10,11 +10,13 @@ namespace large_snake_stuff
     {
         static void Main(string[] args)
         {
-            string PersonResponse;
+            string macOrWindows;
+            string userName;
+            string yesOrNo;
             int age=0;
             Console.WriteLine("Hello! What is your name?");
-            PersonResponse = Console.ReadLine();
-            Console.WriteLine("Hi {0}, how old are you?", PersonResponse);
+            userName = Console.ReadLine();
+            Console.WriteLine("Hi {0}, how old are you?", userName);
             age = int.Parse(Console.ReadLine());
 
             if (age < 13)
@@ -34,21 +36,26 @@ namespace large_snake_stuff
 
             Console.WriteLine("");
             Console.WriteLine("So anyway, how are you doing? Busy lately?");
-            PersonResponse = Console.ReadLine();
+            yesOrNo = Console.ReadLine();
             Console.WriteLine("Same here... wanna play a game? C'mon, computers arn't that boring! :) ");
-            PersonResponse = Console.ReadLine();
+            yesOrNo = Console.ReadLine();
             Console.WriteLine("");
-            if(PersonResponse == "sure")
+            if(yesOrNo == "sure")
             {
                 Console.WriteLine("Awesome! Think of a number 1-5");
             }
 
-            if(PersonResponse == "yes")
+            if(yesOrNo == "yes")
             {
                 Console.WriteLine("Awesome! Think of a number 1-5");
             }
 
-            if (PersonResponse == "yeah")
+            if (yesOrNo == "yeah")
+            {
+                Console.WriteLine("Awesome! Think of a number 1-5");
+            }
+
+            if (yesOrNo == "ok")
             {
                 Console.WriteLine("Awesome! Think of a number 1-5");
             }
@@ -67,28 +74,28 @@ namespace large_snake_stuff
             }
             Console.WriteLine("");
             Console.WriteLine("What computer do you think is best? Windows or Mac?");
-            PersonResponse = Console.ReadLine();
-            if (PersonResponse == "Windows")
+            macOrWindows = Console.ReadLine();
+            if (macOrWindows == "Windows")
             {
                 Console.WriteLine("Why thank you! I am in fact running on Windows right now!");
             }
 
-            if (PersonResponse == "Mac")
+            if (macOrWindows == "Mac")
             {
                 Console.WriteLine("Macs are good, they are efficient. I agree.");
             }
-            if (PersonResponse == "Linux")
+            if (macOrWindows == "Linux")
             {
                 Console.WriteLine("I knew it!!! I just knew that someone would say Ubuntu!");
             }
             
-            if (PersonResponse == "neither")
+            if (macOrWindows == "neither")
             {
                 Console.WriteLine("Wow, you must hate computers!");
             }
-            Console.WriteLine("Well. You are fun! I'm usually lonely.. but you really made my day.", PersonResponse);
+            Console.WriteLine("Well {0}, you are fun! I'm usually lonely.. but you really made my day.", userName);
             Console.WriteLine("");
-            Console.WriteLine("'Til next time", PersonResponse);
+            Console.WriteLine("'Til next time, {0}", userName);
 
             
             Console.ReadKey();
